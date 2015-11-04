@@ -6,13 +6,15 @@
         android:orientation="horizontal"
         android:baselineAligned="false"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
+        android:layout_height="fill_parent"
+        android:background="#ffdfe8ec">
 
         <FrameLayout
             android:id="@+id/container"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1"/>
+            android:layout_weight="1">
+        </FrameLayout>
 
         <FrameLayout
             android:id="@+id/right_container"

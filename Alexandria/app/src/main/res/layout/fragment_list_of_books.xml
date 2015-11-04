@@ -6,7 +6,9 @@
         android:orientation="vertical"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:layout_gravity="center_horizontal|top">
+        android:layout_gravity="center_horizontal|top"
+        android:focusableInTouchMode="true">
+
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -43,7 +45,8 @@
                   android:layout_alignRight="@id/searchButton"
                   android:layout_alignParentRight="true"
                   android:layout_alignParentStart="true"
-                  android:layout_toRightOf="@id/searchButton"/>
+                  android:layout_toRightOf="@id/searchButton"
+                  android:choiceMode="singleChoice" />
 
 
 
