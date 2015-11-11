@@ -162,6 +162,7 @@ public class MainActivity extends ActionBarActivity implements NavigationDrawerF
             id = R.id.right_container;
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         transaction.replace(id, fragment);
+        // ONLY PUSH TO BACK STACK IF PHONE MODE (SINGLE FRAGMENT)
         if (id == R.id.container)
             transaction.addToBackStack("Book Detail");
         transaction.commit();

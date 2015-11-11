@@ -62,6 +62,8 @@ public class BookDetail extends Fragment implements LoaderManager.LoaderCallback
                 bookIntent.putExtra(BookService.EAN, ean);
                 bookIntent.setAction(BookService.DELETE_BOOK);
                 getActivity().startService(bookIntent);
+
+                // ONLY POP THE BACK STACK IF TABLET (2 FRAGMENTS) MODE !!!
                 if (rootView.getRootView().findViewById(R.id.right_container) == null)
                     getActivity().getSupportFragmentManager().popBackStack();
                 else {
@@ -107,6 +109,8 @@ public class BookDetail extends Fragment implements LoaderManager.LoaderCallback
         shareIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_DOCUMENT);
         shareIntent.setType("text/plain");
         shareIntent.putExtra(Intent.EXTRA_TEXT, getString(R.string.share_text)+bookTitle);
+
+        // SHARE ACTION PROVIDER MAY BE NULL AT THAT POINT !!!
         if (shareActionProvider != null)
             shareActionProvider.setShareIntent(shareIntent);
 
@@ -117,6 +121,8 @@ public class BookDetail extends Fragment implements LoaderManager.LoaderCallback
         ((TextView) rootView.findViewById(R.id.fullBookDesc)).setText(desc);
 
         String authors = data.getString(data.getColumnIndex(AlexandriaContract.AuthorEntry.AUTHOR));
+
+        // SPLIT AUTHORS STRING ONLY IF NOT NULL !!!
         if (authors != null) {
             String[] authorsArr = authors.split(",");
             ((TextView) rootView.findViewById(R.id.authors)).setLines(authorsArr.length);
@@ -131,7 +137,7 @@ public class BookDetail extends Fragment implements LoaderManager.LoaderCallback
         String categories = data.getString(data.getColumnIndex(AlexandriaContract.CategoryEntry.CATEGORY));
         ((TextView) rootView.findViewById(R.id.categories)).setText(categories);
 
-
+        // NEED TO GO UP A LEVEL IN ORDER TO FIND THE FRAGMENT CONTAINER !!!
         if(rootView.getRootView().findViewById(R.id.right_container)!=null){
             rootView.findViewById(R.id.backButton).setVisibility(View.INVISIBLE);
         }

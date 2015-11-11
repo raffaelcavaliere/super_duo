@@ -21,6 +21,7 @@ public class DownloadImage extends AsyncTask<String, Void, Bitmap> {
     protected Bitmap doInBackground(String... urls) {
         String urlDisplay = urls[0];
         Bitmap bookCover = null;
+        // NO NEED TO TRY ANYTHING IF EMPTY !!!
         if (urlDisplay == null || urlDisplay.equals(""))
             return null;
         try {
