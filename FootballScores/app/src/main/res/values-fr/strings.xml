@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="about">À propos</string>
+    <string name="about_text">Cette application charge les résultats des parties de football des Premier League, Seria A, Bundesliga, Primera Division et Uefa Champions League.
+        \n\nLes données des parties sont recueillies à partir de l\'API gratuit football-data.org.  Les logos des équipes sont recueillies à partir de http://hdlogo.wordpress.com/ sous permission du propriétaire.
+        \n\nLa version originale de cette application a été créé par Yahia Khalid Ibn El Walid Ahmed, et une version modifiée est offerte aux étudiants du program Udacity Android Nanodegree.   Veuillez signaler toute anomalie et suggestions par courriel à y.k.ibnelwalid@gmail.com.
+        \n\nLors de la saison morte des données non réelles sont affichées dans l\'application.  </string>
+    <string name="action_settings">Paramètres</string>
+    <string name="desc_away_crest">Logo visiteur</string>
+    <string name="desc_home_crest">Logo hôte</string>
+    <string name="desc_share_button">Partager</string>
+    <string name="final_text">Final</string>
+    <string name="first_knockout_round">Huitièmes de finale</string>
+    <string name="group_stage_text">Phases de groupe</string>
+    <string name="matchday_text">Jour de match</string>
+    <string name="quarter_final">Quarts de finale</string>
+    <string name="semi_final">Semi-finale</string>
+    <string name="share_text">Partager</string>
+    <string name="title_activity_about">À propos</string>
+    <string name="today">Aujourd\'hui</string>
+    <string name="tomorrow">Demain</string>
+    <string name="yesterday">Hier</string>
+    <string name="not_known_league">Ligue inconnue</string>
+    <string name="desc_home_team">Équipe hôte</string>
+    <string name="desc_visitor_team">Équipe visiteur</string>
+    <string name="desc_score">Pointage</string>
+    <string name="desc_match_time">Heure de la partie</string>
+    <string name="desc_league">Ligue</string>
+    <string name="no_match">Pas de partie</string>
+</resources>

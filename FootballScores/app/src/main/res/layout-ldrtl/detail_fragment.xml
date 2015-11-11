@@ -39,7 +39,7 @@
         android:gravity="center"
         android:text="@string/share_text"
         android:id="@+id/share_button"
-        android:drawableLeft="@android:drawable/ic_menu_share"
+        android:drawableRight="@android:drawable/ic_menu_share"
         android:paddingLeft="50dp"
         android:paddingRight="50dp"
             android:contentDescription="@string/desc_share_button"

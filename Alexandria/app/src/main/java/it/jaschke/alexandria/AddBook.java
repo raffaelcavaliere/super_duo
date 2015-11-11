@@ -109,7 +109,6 @@ public class AddBook extends Fragment implements LoaderManager.LoaderCallbacks<C
             @Override
             public void onClick(View v) {
                 try {
-                    Context context = getActivity();
                     IntentIntegrator scanIntegrator = new IntentIntegrator(getActivity());
                     scanIntegrator.initiateScan();
                 } catch (Exception ex) {
