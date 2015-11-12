@@ -45,7 +45,9 @@
             android:contentDescription="@string/desc_share_button"
             android:maxLines="1"
             android:background="@color/orange02"
-            android:textColor="@android:color/white" />
+            android:textColor="@android:color/white"
+            android:paddingEnd="50dp"
+            android:paddingStart="50dp" />
     </FrameLayout>
 
 </LinearLayout>
